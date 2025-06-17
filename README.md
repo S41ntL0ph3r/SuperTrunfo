@@ -2,7 +2,7 @@
 
 # Super Trunfo C 📇⚔️  
 Mini‐jogo em linha de comando que cadastra **duas cartas** de cidades brasileiras e exibe seus atributos.  
-Feito em **C99** puro, sem dependências externas.
+Feito na linguagem **C** , sem dependências externas.
 
 ---
 
@@ -12,10 +12,11 @@ Feito em **C99** puro, sem dependências externas.
 3. Pré-requisitos
 4. Compilação
 5. Uso  
-6. Exemplo de sessão  
-7. Roadmap de melhorias
-8. Licença
-9. Autor
+6. Exemplo de sessão
+7. Comparação entre cartas  
+8. Roadmap de melhorias
+9. Licença
+10. Autor
 ---
 
 ## Visão geral
@@ -104,10 +105,23 @@ Pontos Turisticos: 9
 
 ```
 
+## Comparação entre Cartas
+
+Após o cadastro das duas cartas, o programa calcula dois indicadores adicionais:
+
+- Densidade populacional = população ÷ área
+- PIB per capita = (PIB em R$) ÷ população
+
+Nesta versão, a comparação é feita com base exclusivamente na densidade populacional, e vence a carta com a menor densidade. A ideia é representar uma cidade “mais tranquila” como vencedora neste cenário.
+A saída no terminal indica o nome da cidade, seu valor de densidade e qual carta venceu a disputa.
+```
+⚠️ Esta lógica pode ser facilmente modificada no código para priorizar outro atributo (como maior PIB, mais pontos turísticos, etc.), ou até tornar isso uma escolha dinâmica do jogador em futuras versões.
+
+```
+
 ## Roadmap de melhorias
 ### Prioridade | Ideia 
 ```
-🔜 | Comparar atributos e definir carta vencedora
 🔜 | Suporte a N cartas via vetor ou lista ligada 
 🔜 | Persistência em arquivo (JSON ou CSV) 
 🔜 | Modo player vs. computador com seleção aleatória
