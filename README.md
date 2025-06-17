@@ -182,9 +182,10 @@ Carta 2: 50.30 + 3200.00 = 3250.30
 ```
 👨‍💻 Autor
 
-💻 Desenvolvido por Gabriel Moreira<br>
-👨‍🎓 Estudante de programação em Javascript, Typescript, Python e Desenvolvedor Web.<br>
-Este programa foi criado com o intuito de realizar um trabalho da Faculdade.
+💻 Desenvolvido por **Gabriel Moreira** <br>  
+👨‍🎓 Estudante de Ciência da Computação; desenvolvedor web com experiência em **JavaScript**, **TypeScript** e **Python**.<br>  
+🛠️  Este projeto foi desenvolvido para fins educacionais como parte de um trabalho acadêmico.. <br>  
+
 
 ## License
 
