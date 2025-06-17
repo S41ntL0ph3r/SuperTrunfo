@@ -13,10 +13,11 @@ Feito na linguagem **C** , sem dependências externas.
 4. Compilação
 5. Uso  
 6. Exemplo de sessão
-7. Comparação entre cartas  
-8. Roadmap de melhorias
-9. Licença
-10. Autor
+7. Comparação entre cartas
+8. Versão 2.0
+9. Roadmap de melhorias
+10. Licença
+11. Autor
 ---
 
 ## Visão geral
@@ -119,6 +120,56 @@ A saída no terminal indica o nome da cidade, seu valor de densidade e qual cart
 
 ```
 
+## Versão 2.0
+A nova versão do Super Trunfo implementa comparações múltiplas e dinâmicas entre cartas, oferecendo uma jogabilidade mais rica e lógica mais refinada:
+
+✅ Funcionalidades adicionadas
+Escolha de 2 atributos diferentes para comparação, com menu interativo que remove o primeiro atributo escolhido da segunda seleção.
+
+Comparação automática baseada nas seguintes regras:
+
+Para todos os atributos numéricos, o maior valor vence.
+
+Para densidade populacional, o menor valor vence (exceção que representa cidades menos sobrecarregadas).
+
+Cálculo da soma dos dois atributos escolhidos para definir o vencedor final.
+
+Tratamento completo de empates, com mensagem clara.
+
+Interface de seleção via switch, com default para tratar erros de entrada.
+
+Uso do operador ternário para tornar o código mais conciso nas decisões.
+
+Código modularizado: uso da função preencherCarta() para entrada de dados, com limpeza do stdin via getchar() para evitar bugs de entrada.
+
+ ### Exemplo de uso da nova lógica:
+```
+Escolha o primeiro atributo para comparar:
+1. Populacao
+2. Area
+3. PIB
+4. Pontos Turisticos
+5. Densidade Populacional
+> 3
+
+Escolha o segundo atributo (diferente do anterior):
+1. Populacao
+2. Area
+4. Pontos Turisticos
+5. Densidade Populacional
+> 5
+
+=== Resultado da Comparação ===
+Atributo 1: PIB → Carta 1: 60.50 | Carta 2: 50.30 → Carta 1 vence
+Atributo 2: Densidade Populacional → Carta 1: 4200.00 | Carta 2: 3200.00 → Carta 2 vence
+
+Soma dos pontos:
+Carta 1: 60.50 + 4200.00 = 4260.50
+Carta 2: 50.30 + 3200.00 = 3250.30
+
+🎉 Vencedora: Carta 1 (São Paulo)
+```
+
 ## Roadmap de melhorias
 ### Prioridade | Ideia 
 ```
@@ -129,6 +180,11 @@ A saída no terminal indica o nome da cidade, seu valor de densidade e qual cart
 🌓 | Interface TUI (ncurses) ou GUI (SDL) 
 🌟 | Porta para Arduino / ESP32 para rodar em hardware real 
 ```
+👨‍💻 Autor
+
+💻 Desenvolvido por Gabriel Moreira<br>
+👨‍🎓 Estudante de programação em Javascript, Typescript, Python e Desenvolvedor Web.<br>
+Este programa foi criado com o intuito de realizar um trabalho da Faculdade.
 
 ## License
 
